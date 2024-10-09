@@ -4,7 +4,7 @@ import Img from "../../components/Img/Index";
 
 export default function Benefits() {
   return (
-    <div className="flex flex-col items-center justify-center px-[160px] py-[120px] h-[700px] gap-[130px] lg:py-8 md:py-5 sm:py-4">
+    <div className="flex flex-col items-center justify-center px-[160px] py-[120px] min-h-[700px] gap-[130px] lg:py-8 md:py-5 sm:py-4">
       <div className="container-xs flex flex-col gap-[5px] lg:px-5 md:px-5 sm:gap-[29px]">
         <div className="flex flex-col items-start gap-[22px]">
           <div className="flex text-left gap-[2px] md:flex-col">

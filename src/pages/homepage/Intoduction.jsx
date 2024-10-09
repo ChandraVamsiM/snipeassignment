@@ -47,17 +47,13 @@ export default function Introduction() {
               <div className="container-xs flex flex-col items-center mt-5">
                 <Button
                   shape="round"
-                  leftIcon={
-                    <div>
-                      <Img
-                        src="/images/watchImg.png" // Updated path
-                        alt="Overflow Menu"
-                        className="mb-1.5 mt-2 h-[30px] w-[30px]"
-                      />
-                    </div>
-                  }
-                  className="w-[288px] h-[75px] text-[30px] gap-2.5 rounded-[12px] px-6 py-3 font-black sm:px-4 sm:py-2 md:min-w-[320px] lg:min-w-[360px] xl:min-w-[400px]"
+                  className="w-[288px] h-[75px] text-[30px] rounded-[12px] font-black flex items-center justify-center md:min-w-[320px] lg:min-w-[360px] xl:min-w-[400px]"
                 >
+                  <Img
+                    src="/images/watchImg.png"
+                    alt="Watch Intro"
+                    className="h-[30px] w-[30px] mr-2" // Add margin to space out the image from the text
+                  />
                   Watch Intro
                 </Button>
               </div>
