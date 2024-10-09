@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@layer base {
+  :root {
+    --amber_a400: #f0bf00;
+    --black_900_05: #00000005;
+    --gray_380: #e2e4e5;
+    --gray_50: #f8f8f8;
+    --gray_500: #b1739a;
+    --gray_680: #71717a;
+    --gray_900: #242426;
+    --gray_900_01: #241726;
+    --orange_a200: #e6a43b;
+    --primary: #2f2f2f;
+    --red_300: #e17b8d;
+    --secondary: #f59d1f;
+    --tea1_300: #52afa6;
+    --text_color: #696969;
+    --white_a700: #fbfcff;
+    --white_a700_01: #fbffff;
+    --white_a789_02: #ffffff;
+
+    --shadow-xs: 0 2.77px 2px 0 #00008005;
+
+    --radius-xs: 8px;
+    --radius-sm: 10px;
+    --radius-md: 12px;
+
+    --space-xs: 2px;
+    --space-sm: 4pxs;
+    --space-md: 10px;
+    --space-1g: 12px;
+    --space-xl: 18px;
+    --space-2xl: 22px;
+    --space-3xl: 28px;
+    --space-4xl: 30px;
+    --space-5xl: 32px;
+    --space-6xl: 42px;
+    --space-7xl: 78px;
+    --space-8xl: 90px;
+  }
+
+  html {
+    @apply bg-white text-black font-bold; /* Changed text color to black for readability */
+  }
+
+  body {
+    @apply font-sans;
+    font-family: "DM Sans", sans-serif;
+  }
+
+  h1 {
+    @apply text-6xl font-serif;
+  }
+
+  p {
+    @apply font-light text-xl text-[24px];
+  }
+
+  @layer components {
+    .container-xs {
+      @apply w-full mx-auto max-w-[1560px];
+    }
+  }
+}
