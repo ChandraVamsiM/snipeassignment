@@ -18,15 +18,17 @@ export default function Footer(props) {
     { text: "Olympiad Terms & Conditions", link: "#olympiadterms&conditions" },
     { text: "FAQS", link: "#faqs" },
   ];
+
   return (
     <footer
-      className={`${props.className} flex justify-center mt-12 md:py-5 sm:py-4 bg-gray-800 h-[536px]`}
+      className={`${props.className} flex justify-center mt-12 md:py-5 sm:py-4 bg-gray-800 h-auto xs:px-3 `}
     >
-      <div className="container-xs flex lg:px-5 md:px-5">
-        <div className="flex w-full flex-col items-center">
+      <div className="container-xs flex flex-col lg:px-5 md:px-5">
+        <div className="flex flex-col items-center w-full">
           <Heading
+            size="headinglg"
             as="h2"
-            className="text-[30px] font-black text-[#F59D1F] underline lg:text-[25px] md:text-[24px] sm:text-[22px]"
+            className="text-[30px] font-black text-[#F59D1F] underline "
           >
             Newsletter
           </Heading>
@@ -45,11 +47,12 @@ export default function Footer(props) {
             </Button>
           </div>
 
-          <div className="w-full min-h-[234px] grid grid-cols-2 max-gap-[160px] mt-12 mx-auto">
-            <div className="flex flex-col ml-[60px]">
+          <div className="w-full min-h-[234px] grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 mx-auto">
+            <div className="flex flex-col ml-0 md:ml-[60px]">
               <Heading
+                size="headinglg"
                 as="h3"
-                className="text-[30px] text-left font-black text-[#F59D1F] lg:text-[25px] md:text-[24px] sm:text-[22px]"
+                className="text-[30px] text-left font-black text-[#F59D1F] lg:text-[25px] md:text-[24px] xs:text-[24px]"
               >
                 Snipe Labs Private Limited
               </Heading>
@@ -57,7 +60,7 @@ export default function Footer(props) {
                 <Img
                   src="images/pinIcon.png"
                   alt="Location Icon"
-                  className="h-[24px] w-[24px] mt-1" // Adjust margin here
+                  className="h-[24px] w-[24px] mt-1"
                 />
                 <Heading
                   as="p"
@@ -71,8 +74,8 @@ export default function Footer(props) {
               <div className="flex items-center mt-2 gap-[18px]">
                 <Img
                   src="images/mailIcon.png"
-                  alt="Location Icon"
-                  className="h-[24px] w-[24px] mt-1" // Adjust margin here
+                  alt="Mail Icon"
+                  className="h-[24px] w-[24px] mt-1"
                 />
                 <Heading
                   as="p"
@@ -81,34 +84,12 @@ export default function Footer(props) {
                   support@snipe.in
                 </Heading>
               </div>
-              <div className="flex items-center mt-3 max-w-[450px]">
-                <Heading
-                  as="h3"
-                  className="text-[21px] font-black leading-[27px] gap-[24px] text-left text-[#f59d1f] lg:text-[17px]"
-                >
-                  Social Media:
-                </Heading>
-                <Img
-                  src="images/FaceBookIcon.png"
-                  alt="Location Icon"
-                  className="h-[50px] w-[50px] ml-2"
-                />
-                <Img
-                  src="images/instaIcon.png"
-                  alt="Location Icon"
-                  className="h-[50px] w-[50px] ml-1"
-                />
-                <Img
-                  src="images/twitterIcon.png"
-                  alt="Location Icon"
-                  className="h-[50px] w-[50px] ml-1"
-                />
-              </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4 w-[594px]">
+            <div className="flex flex-row gap-[60px] ">
               <div className="flex flex-col">
                 <Heading
+                  size="headinglg"
                   as="h3"
                   className="text-[30px] text-left font-black text-[#F59D1F] underline lg:text-[25px] md:text-[24px] sm:text-[22px]"
                 >
@@ -129,6 +110,7 @@ export default function Footer(props) {
 
               <div className="flex flex-col">
                 <Heading
+                  size="headinglg"
                   as="h3"
                   className="text-[30px] text-left font-black text-[#F59D1F] underline lg:text-[25px] md:text-[24px] sm:text-[22px]"
                 >
@@ -136,7 +118,7 @@ export default function Footer(props) {
                 </Heading>
                 {usefulLinks.map((item, index) => (
                   <Heading
-                    key={index} // Use index as key (or a unique ID if available)
+                    key={index}
                     as="p"
                     className="text-[21px] font-medium text-left text-[#FFFFFF] lg:text-[18px] md:text-[15px] sm:text-[12px]"
                   >
@@ -145,6 +127,35 @@ export default function Footer(props) {
                     </a>
                   </Heading>
                 ))}
+              </div>
+            </div>
+
+            <div className="flex items-center mb-6 max-w-[450px] ">
+              <div>
+                <Heading
+                  as="h3"
+                  className="text-[21px] font-black leading-[27px]  text-left text-[#f59d1f] lg:text-[17px]"
+                >
+                  Social Media:
+                </Heading>
+              </div>
+
+              <div className="flex">
+                <Img
+                  src="images/FaceBookIcon.png"
+                  alt="Facebook Icon"
+                  className="h-[50px] w-[50px] ml-2"
+                />
+                <Img
+                  src="images/instaIcon.png"
+                  alt="Instagram Icon"
+                  className="h-[50px] w-[50px] ml-1"
+                />
+                <Img
+                  src="images/twitterIcon.png"
+                  alt="Twitter Icon"
+                  className="h-[50px] w-[50px] ml-1"
+                />
               </div>
             </div>
           </div>

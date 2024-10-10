@@ -11,9 +11,9 @@ const sizes = {
   headinglg:
     "text-[30px] font-black lg:text-[25px] md:text-[28px] sm:text-[26px]",
   headingxl:
-    "text-[42px] font-black lg:text-[35px] md:text-[38px] sm:text-[32px]",
+    "xl:text-[42px] font-black lg:text-[35px] md:text-[38px] sm:text-[32px]",
   heading2xl: "text-[66px] font-black lg:text-[66px] md:text-[48px]",
-  heading3xl: "text-[99px] font-black lg:text-[99px] md:text-[48px]",
+  heading3xl: "xl:text-[99px] font-black ",
   heading4xl: "text-[120px] font-black lg:text-[120px] md:text-[48px]",
 };
 

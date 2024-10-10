@@ -4,21 +4,21 @@ import Img from "../../components/Img/Index";
 
 export default function Benefits() {
   return (
-    <div className="flex flex-col items-center justify-center px-[160px] py-[120px] min-h-[700px] gap-[130px] lg:py-8 md:py-5 sm:py-4">
-      <div className="container-xs flex flex-col gap-[5px] lg:px-5 md:px-5 sm:gap-[29px]">
+    <div className="flex flex-col items-center justify-center lg:[160px] xl:px-[160px] md:px-[80px] py-[120px] min-h-[700px] xs:px-[18px] xs:py-[90px]">
+      <div className="container-xs flex flex-col gap-[5px] sm:gap-[29px]">
         <div className="flex flex-col items-start gap-[22px]">
           <div className="flex text-left gap-[2px] md:flex-col">
             <Heading
               size="heading2xl"
               as="h1"
-              className="text-[66px] font-black text-blue_gray-900 lg:text-[48px] md:text-[48px] border-l-8 border-[#E6A443] pl-4"
+              className="text-[66px] font-black text-blue_gray-900 lg:text-[48px] md:text-[48px] border-l-8 border-[#E6A443] pl-4 xs:text-[30px]"
             >
               About the Program
             </Heading>
           </div>
           <Heading
             as="p"
-            className="w-full text-left text-[21px] font-normal leading-[27px] text-blue_gray-900 lg:text-[17px]"
+            className="w-full text-left text-[21px] font-normal leading-[27px] text-blue_gray-900 lg:text-[18px] xs:text-[18px]"
           >
             The SNIPE program empowers children to be safe on the roads. Our
             interactive lessons teach them the skills they need to navigate as
@@ -31,7 +31,7 @@ export default function Benefits() {
             className="text-[21px] text-left font-normal leading-[27px] text-blue_gray-900 lg:text-[17px]"
           >
             <span className="text-black font-bold">Benefits</span>
-            <ul className="list-disc pl-5">
+            <ul className="list-disc pl-5  xs:text-[18px]">
               <li>Aligns with UM SPGs for safety and education</li>
               <li>
                 Based on guidelines issued by the National Highway Authority of
@@ -42,8 +42,8 @@ export default function Benefits() {
             </ul>
           </Heading>
         </div>
-        <div className="mx-[100px] grid grid-cols-2 gap-[90px] md:mx-0 md:flex-col">
-          <div className="border-[3px] border-[#E6A443]  rounded-[9px] p-4 flex items-center justify-center">
+        <div className="xl:mx-[100px] flex flex-col justify-center gap-[90px]   md:flex-row xs:gap-[30px] ">
+          <div className="border-[3px] border-[#E6A443]  rounded-[9px] p-4 flex items-center justify-center xs:p-[18px] xl:w-[50%] w-[100%]">
             <Img
               src="images/benifits1.png"
               alt="Vector Image"
@@ -56,7 +56,7 @@ export default function Benefits() {
               </div>
             </div>
           </div>
-          <div className="border-[3px] border-[#E6A443]  rounded-[9px] p-4 flex items-center justify-center">
+          <div className="border-[3px] border-[#E6A443]  rounded-[9px] p-4 flex items-center justify-center xs:p-[18px] xl:w-[50%] w-[100%]">
             <Img
               src="images/benifits2.png"
               alt="Vector Image"

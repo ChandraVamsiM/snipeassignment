@@ -53,14 +53,6 @@
     font-family: "DM Sans", sans-serif;
   }
 
-  h1 {
-    @apply text-6xl font-serif;
-  }
-
-  p {
-    @apply font-light text-xl text-[24px];
-  }
-
   @layer components {
     .container-xs {
       @apply w-full mx-auto max-w-[1560px];
